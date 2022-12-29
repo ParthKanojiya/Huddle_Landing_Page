@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+
+--Primary-Pink: hsl(322, 100%, 66%);
+--Neutral-Very-Pale-Cyan: hsl(193, 100%, 96%);
+--Neutral-Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Neutral-Grayish-Blue: hsl(208, 11%, 55%);
+--Font-Open-sans: 'Open Sans', sans-serif;
+--Font-Poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/*================== Header CSS Start ===============*/
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-hero-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Neutral-Very-Pale-Cyan);
+}
+
+#logo-and-btn img {
+    max-width: 100%;
+    height: auto;
+}
+
+#logo-and-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+#tryitfreebtn {
+    padding: 16px 60px;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0px 4px 2px rgba(0, 0, 0, 0.1) !important;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.right-header {
+    width: 50%;
+}
+
+.right-header img{
+    width: 100%;
+    height: auto;
+}
+
+.left-header {
+    width: 50%;
+    margin-right: 5rem;
+}
+
+.left-header h1 {
+    font-family: var(--Font-Poppins);
+    font-size: 3.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+}
+
+.left-header p {
+    font-family: var(--Font-Open-sans);
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+#started-free-btn {
+	padding: 1.2rem 3.5rem;
+	outline: none;
+	border: none;
+	border-radius: 3rem;
+    background-color: var(--Primary-Pink);
+    color: #fff;
+    font-family: var(--Font-Open-sans);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1) !important;
+    cursor: pointer;
+    margin-top: 1.6rem;
+}
+/*================== Header CSS End ===============*/
+
+/*================== Services Section CSS Start ===============*/
+
+#services-section {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.service-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 3rem;
+    margin-top: 10rem;
+}
+
+    /* card css start */
+
+.card-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.grow-together {
+    padding: 0 6rem;
+}
+
+.grow-together h2 {
+    font-family: var(--Font-Poppins);
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+.grow-together p {
+    font-family: var(--Font-Open-sans);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--Neutral-Grayish-Blue);
+}
+
+.grow-together-img {
+    padding: 2rem 3rem;
+}
+
+.grow-together-img img {
+    width: 100%;
+}
+
+.community {
+    width: 50%;
+    height: 18rem;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 7rem;
+    text-align: center;
+}
+
+.community h2 {
+    font-family: var(--Font-Poppins);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#started-free-btn {
+    font-size: 1.2rem;
+}
+
+/*================== Services Section CSS End ===============*/
+
+/*================== Footer Section CSS Start ===============*/
+
+footer {
+    width: 100%;
+    height: 35rem;
+    background-color: var(--Neutral-Very-Dark-Cyan);
+    position: relative;
+    z-index: -1;
+}
+
+.ftr-wrapper {
+    width: 100%;
+    height: auto;
+    top: 10rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ftr-clm-1 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+
+.ftr-clm-1 img {
+    width: 230px;
+    height: 70px;
+    padding-bottom: 2rem;
+    color: #fff;
+}
+
+.ftr-clm-1 span {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    font-family: var(--Font-Open-sans);
+    font-size: 1rem;
+    color: #fff;
+}
+
+.ftr-clm-1 i {
+    margin-right: 1rem;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+    padding: 1.1rem;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 50%; 
+
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+    color: #fff;
+}
+
+.ftr-clm-2, .ftr-clm-3 {
+    font-family: var(--Font-Open-sans);
+    font-size: 1rem;
+    color: #fff;
+    padding-top: 4.5rem;   
+}
+
+.ftr-clm-2 li, .ftr-clm-3 li {
+    padding-bottom: 1.8rem;
+}
+
+.ftr-clm-4 {
+    margin-top: 4.5rem;
+}
+
+.ftr-clm-4 span {
+    margin-right: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.copywrite {
+    font-family: var(--Font-Poppins);
+    font-size: 0.8rem;
+    color: #fff;
+    margin-top: 12rem;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+}
+
+
+/*================== Footer Section CSS End ===============*/
+
+/*================== Media Queries Start ===============*/
+
+@media only screen and (max-width: 1024px) {
+
+    .left-header h1 {
+        font-size: 2rem;
+    }
+
+    .community h2 {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .left-header {
+        margin-right: 1rem;
+    }
+    
+    .left-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .left-header p {
+        font-size: 1rem;
+    }
+
+    #started-free-btn {
+        padding: 1rem 1.2rem;
+    }
+
+    .grow-together {
+        padding: 1rem 2rem;
+    }
+
+    .grow-together p {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    
+    #logo-and-btn img {
+        max-width: 50%;
+        height: auto;
+    }
+    
+    #tryitfreebtn {
+        padding: 12px 40px;
+    }
+
+    #header {
+        height: 75vh;
+    }
+    
+    #hero-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .left-header,
+    .right-header {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .right-header img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-wrapper {
+        margin-top: 12rem;
+    }
+
+    .community h2 {
+        font-size: 1.5rem;
+    }
+
+    #started-free-btn {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .card-1 {
+        flex-direction: column-reverse;
+    }
+
+    .grow-together {
+        text-align: center;
+    }
+
+    .grow-together-img {
+        order: 2;
+    }
+
+    footer {
+        height: 65rem;
+    }
+
+    .ftr-wrapper {
+        flex-direction: column;
+    }
+
+
+    .ftr-clm-4 {
+        text-align: center;
+    }
+
+    .community {
+        width: 90%;
+        height: 14rem;
+    }
+
+    .community h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    #tryitfreebtn {
+        padding: 10px 30px;
+    }
+
+    #logo-and-btn img {
+        max-width: 45%;
+        height: auto;
+    }
+
+    #started-free-btn {
+        padding: 10px 0;
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .ftr-clm-2, 
+    .ftr-clm-3 {
+        padding-top: 1rem;
+    }
+
+    .ftr-clm-4 {
+        margin: 0;
+    }
+
+    footer {
+        height: 60rem;
+    }
+
+    .copywrite {
+        text-align: center;
+    }
+
+    .ftr-clm-1 img {
+        width: 80%;
+        height: auto;
+    }
+
+
+}
